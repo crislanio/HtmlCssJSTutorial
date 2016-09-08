@@ -2,5 +2,5 @@
 
 #Atividade 1
 ### Screenshots
-![alt tag](https://raw.githubusercontent.com/crislanio/HtmlCssJSTutorial/atividade1/img/master/Screenshot3.png)
+![alt tag](https://raw.githubusercontent.com/crislanio/HtmlCssJSTutorial/master/atividade1/img/Screenshot3.png)
 
