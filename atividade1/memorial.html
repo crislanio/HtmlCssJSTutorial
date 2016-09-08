@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SAPERE AUDE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navegador">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+            <img class="navbar-brand" src="img/sapereaude.jpg" alt="sapereaude" height="240" width="100" />
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Memorial</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <button type="button" class="glyphicon glyphicon-log-in" data-toggle="modal" data-target="#myModal">Secret</button>
+            </ul>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="http://www.w3schools.com/html/action_page.php" method="GET">
+                        Primeiro nome:<input type="text" class="form-control" name="primeironome" size="20" maxlength="15" placeholder="Seu Nome"><br>
+                        <input type="hidden" name="textoescondido" value="texto_escondido"><br> Insira um número entre 25.000 e 30.000<input type="number" class="form-control" name="numero" min="25000" max="30000">
+
+                        <br> O que você prefere:<br>
+                        <input type="radio" name="opcagua" value="opc_agua"> Água <br>
+                        <input type="radio" name="opcagua" value="opc_suco" checked> Suco <br>
+                        <input type="radio" name="opccocacola" value="opc_cocacola"> Coca-Cola <br>
+                        <br><br> Quais bandas de rock você gosta: <br>
+                        <input type="checkbox" name="opcmegadeth" value="opc_megadeth"> Megadeth <br>
+                        <input type="checkbox" name="opcmetalica" value="opc_metalica"> Metálica <br>
+                        <input type="checkbox" name="opcironmaiden" value="opc_iron_maiden"> Iron Maiden <br>
+                        <input class="modal-footer btn btn-success btn btn-default" type="submit" value="Submeter" data-dismiss="modal">
+                        <!-- <input class="modal-footer btn btn-success btn btn-default" type="submit" value="Submeter" data-dismiss="modal"> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="div1" class="container-fluid bg-4 text-center fundo">
+        <h3>Memorial</h3>
+        <img src="img/cris.jpg" class="img-circle crisimage" alt="Clark" width="350" height="350">
+        <p style="color: black">Me chamo Crislânio de Souza Macêdo, nasci em um município cearense chamado Jucás, tenho dois irmãos, aos cinco anos de idade fui morar em Bragança Paulista (São Paulo) onde minha infância começa, lembro-me dos momentos em que me divertia e fazia
+            travessuras, brincava na chuva, andava de bicicleta, lembro-me quando saía com minha mãe para deixar minha irmã no colégio e esperávamos ansiosos pela chegada do meu pai do trabalho. Tenho várias recordações dessa época tão graciosa, que com
+            certeza marcaram minha vida.</p>
+        <ul class="pager">
+            <li><a href="https://crislanio.wordpress.com/memorial/">Leia Mais</a></li>
+        </ul>
+
+    </div>
+
+    <footer id="rodape" class="container-fluid">
+        <strong style="color: black"> © Copyright 2016 Sapere Aude</strong>
+    </footer>
+
+</body>
+
+</html>

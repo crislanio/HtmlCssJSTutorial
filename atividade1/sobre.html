@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SAPERE AUDE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navegador">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <img class="navbar-brand" src="img/sapereaude.jpg" alt="sapereaude" height="240" width="100" />
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="memorial.html">Memorial</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <button type="button" class="glyphicon glyphicon-log-in" data-toggle="modal" data-target="#myModal">Secret</button>
+            </ul>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="http://www.w3schools.com/html/action_page.php" method="GET">
+                        Primeiro nome:<input type="text" class="form-control" name="primeironome" size="20" maxlength="15" placeholder="Seu Nome"><br>
+                        <input type="hidden" name="textoescondido" value="texto_escondido"><br> Insira um número entre 25.000 e 30.000<input type="number" class="form-control" name="numero" min="25000" max="30000">
+
+                        <br> O que você prefere:<br>
+                        <input type="radio" name="opcagua" value="opc_agua"> Água <br>
+                        <input type="radio" name="opcagua" value="opc_suco" checked> Suco <br>
+                        <input type="radio" name="opccocacola" value="opc_cocacola"> Coca-Cola <br>
+                        <br><br> Quais bandas de rock você gosta: <br>
+                        <input type="checkbox" name="opcmegadeth" value="opc_megadeth"> Megadeth <br>
+                        <input type="checkbox" name="opcmetalica" value="opc_metalica"> Metálica <br>
+                        <input type="checkbox" name="opcironmaiden" value="opc_iron_maiden"> Iron Maiden <br>
+                        <input class="modal-footer btn btn-success btn btn-default" type="submit" value="Submeter" data-dismiss="modal">
+                        <!-- <input class="modal-footer btn btn-success btn btn-default" type="submit" value="Submeter" data-dismiss="modal"> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-4 text-center fundo">
+        <h2 style=" color:black ">Projetos de pesquisa</h2>
+        <p>
+            <h5><span class="glyphicon glyphicon-time "></span> 2015-Atual</h5><br>
+            <strong>Perfil de um aluno balanceado na UFC-Quixadá por análise multiobjetivo.</strong>
+        </p>
+        <hr>
+        <h2 style="color:black ">Projetos de pesquisa</h2>
+        <p>
+            <h5><span class="glyphicon glyphicon-time "></span> 2015-Atual</h5><br>
+            <strong>Perfil de um aluno balanceado na UFC-Quixadá por análise multiobjetivo.</strong>
+        </p>
+        <hr>
+        <h2 style="color:black ">Projetos de extensão</h2>
+        <p>
+            <h5><span class="glyphicon glyphicon-time "></span> 2016-2016</h5><br>
+            <strong>Grupo de estudo em algoritmos e aprendizagem de máquina – GAMM.</strong>
+        </p>
+        <hr>
+        <h2 style="color:black "> Outros projetos</h2>
+        <p>
+            <h5><span class="glyphicon glyphicon-time "></span> 2015-2015</h5><br>
+            <strong>Monitoria de Pré Cálculo e Cálculo Diferencial e Integral 1.</strong>
+            <h5><span class="glyphicon glyphicon-time "></span> 2014-2014</h5><br>
+            <strong>Aprendizagem Cooperativa em Células Estudantis: Programação Funcional em Haskell.</strong>
+            <h5><span class="glyphicon glyphicon-time "></span> 2013-2013</h5><br>
+            <strong>Monitoria de Matemática Básica e Matemática Discreta.</strong>
+    </div>
+
+    <footer id="rodape" class="container-fluid">
+        <strong style="color: black"> © Copyright 2016 Sapere Aude</strong>
+    </footer>
+
+</body>
+
+</html>

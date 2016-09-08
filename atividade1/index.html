@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+<!-- Crislanio Macedo-->
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>SAPERE AUDE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navegador">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+            <img class="navbar-brand" src="img/sapereaude.jpg" alt="sapereaude" height="240" width="100" />
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="memorial.html">Memorial</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <button type="button" class="glyphicon glyphicon-log-in" data-toggle="modal" data-target="#myModal">Secret</button>
+            </ul>
+        </div>
+    </nav>
+    <header id="cabecalho">
+        <a href="#melhorespostes">Posts</a>
+    </header>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="http://www.w3schools.com/html/action_page.php" method="GET">
+                        Primeiro nome:<input type="text" class="form-control" name="primeironome" size="20" maxlength="15" placeholder="Seu Nome"><br>
+                        <input type="hidden" name="textoescondido" value="texto_escondido"><br> Insira um número entre 25.000 e 30.000<input type="number" class="form-control" name="numero" min="25000" max="30000">
+
+                        <br> O que você prefere:<br>
+                        <input type="radio" name="opcagua" value="opc_agua"> Água <br>
+                        <input type="radio" name="opcagua" value="opc_suco" checked> Suco <br>
+                        <input type="radio" name="opccocacola" value="opc_cocacola"> Coca-Cola <br>
+                        <br><br> Quais bandas de rock você gosta: <br>
+                        <input type="checkbox" name="opcmegadeth" value="opc_megadeth"> Megadeth <br>
+                        <input type="checkbox" name="opcmetalica" value="opc_metalica"> Metálica <br>
+                        <input type="checkbox" name="opcironmaiden" value="opc_iron_maiden"> Iron Maiden <br>
+                        <input class="modal-footer btn btn-success btn btn-default" type="submit" value="Submeter" data-dismiss="modal">
+                        <!-- <input class="modal-footer btn btn-success btn btn-default" type="submit" value="Submeter" data-dismiss="modal"> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="div1" class="container-fluid bg-4 text-center fundo">
+        <h3>Quem eu sou ?</h3>
+        <img src="img/cris.jpg" class="img-rounded crisimage" alt="Clark" width="350" height="350">
+        <h3>Crislânio Macêdo é acadêmico em Ciência da Computação pela UFC-Quixadá</h3>
+    </div>
+
+    <div id="div2" class="container-fluid bg-2 text-center">
+        <h3>Áreas de interesse?</h3>
+        <p> #Analytics, #BigData,#DataMining, #DataScience,#DeepLearning #Statistics #ArtificialIntelligence #EducationScience </p>
+        <a href="https://crislanio.wordpress.com/about/" target="_blank" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-search"></span> Blog Pessoal
+        </a>
+    </div>
+
+    <div id="div3" class="container-fluid bg-3 text-center">
+        <section id="melhorespostes">
+            <h3>Posts importantes</h3><br>
+        </section>
+        <div id="div4" class="row">
+            <div id="div5" class="col-sm-4">
+                <article class="artigo1">
+                    <h4>Um estudo sobre evasão na UFC-QUIXADÁ</h4>
+                    <p>O Problema da Evasão A evasão escolar é um problema complexo, vários fatores podem influenciar na decisão do aluno evadir, como: problemas pessoais</p>
+                    <ul class="pager">
+                        <li><a href="https://crislanio.wordpress.com/2016/07/23/um-estudo-sobre-evasao-na-ufc-quixada/">Leia Mais</a></li>
+                    </ul>
+                    <a href="https://crislanio.wordpress.com/2016/07/23/um-estudo-sobre-evasao-na-ufc-quixada/" target="_blank"><img src="img/evasao.jpg" alt="Evasão escolar" width="250" height="200"></a>
+                </article>
+
+            </div>
+            <div id="div6" class="col-sm-4">
+                <article class="artigo2">
+                    <h4>Quadro Compartilhado Usando Lua</h4>
+                    <p>Nesse post iremos mostrar a aplicação, Quadro Compartilhado Usando Lua. Para mais informações leia mais em nosso blog pessoal</p>
+                    <ul class="pager">
+                        <li><a href="https://crislanio.wordpress.com/2016/07/22/quadro-compartilhado-usando-lua/">Leia Mais</a></li>
+                    </ul>
+                    <a href="https://crislanio.wordpress.com/2016/07/22/quadro-compartilhado-usando-lua/" target="_blank"><img src="img/quadrolua.jpg" alt="Quadro compartilhado em lua" width="250" height="200"></a>
+                </article>
+            </div>
+            <div id="div7" class="col-sm-4">
+                <article class="artigo3">
+                    <h4>Classificação de textos para detecção de spams</h4>
+                    <p>Aprendizagem supervisionada em um problema de classificação de mensagens de textos, utilizando classificadores como árvore de decisão e naive bayes.</p>
+                    <ul class="pager">
+                        <li><a href="https://crislanio.wordpress.com/2016/07/18/classificacao-de-textos-para-deteccao-de-spams/">Leia Mais</a></li>
+                    </ul>
+                    <a href="https://crislanio.wordpress.com/2016/07/18/classificacao-de-textos-para-deteccao-de-spams/" target="_blank"><img src="img/spanham.png" alt="Image" width="250" height="200"></a>
+                </article>
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="rodape" class="container-fluid">
+        <strong style="color: black"> © Copyright 2016 Sapere Aude</strong>
+    </footer>
+
+</body>
+
+</html>
